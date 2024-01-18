@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Katik Persegi</title>
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <div class="header-title">
+                    <h1>KATIK</h1>
+                    <h3> (Kalkulator Matematik)</h3>
+                </div>
+                <p>A simple web application for calculating the area and perimeter of a square</p>
+            </div>
+        </header>
+
+        <main>
+            <div id="content">
+                <div class="container">
+                    <article class="card">
+                        <div class="head-card">
+                            <h1>Luas Persegi</h1>
+                        </div>
+                        <div class="body-card">
+                            <img src="img/square-pic.jpeg" alt="">
+                            <h2>L = S x S</h2>
+                            <h4> Keterangan :</h4>
+                            <p>L = luas persegi <br> S = panjang sisi</p>
+                            <div class="inputSection">
+                                <label for="squareSide" id="lblSquareSide">Hitung Luas Persegi</label>
+                                <h5>Masukkan panjang sisi : </h5>
+                                <input type="number" class="squareSide" id="squareSideLuas" name="luasPersegi">
+                            </div>
+                            <div class="buttons">
+                                <button onclick="getLuasPersegi();">Hitung</button>
+                                <button onclick="reset();">Reset</button>
+                            </div>
+                            <div class="result">
+                                <p id="rumusLuasPersegi"></p>
+                                <p id="hitungLuasPersegi"></p>
+                                <p id="resultLuasPersegi"></p>
+                            </div>
+                        </div>
+                    </article>
+        
+                    <article class="card">
+                        <div class="head-card">
+                            <h1>Keliling Persegi</h1>
+                        </div>
+                        <div class="body-card">
+                            <img src="img/square-pic.jpeg" alt="">
+                            <h2>K = 4 x S</h2>
+                            <h4> Keterangan :</h4>
+                            <p>K = keliling persegi <br> S = panjang sisi</p>
+                            <div class="inputSection">
+                                <label for="squareSide" id="lblSquareSide">Hitung Keliling Persegi</label>
+                                <h5>Masukkan panjang sisi : </h5>
+                                <input type="number" class="squareSide" id="squareSideKeliling" name="kelilingPersegi">
+                            </div>
+                            <div class="buttons">
+                                <button onclick="getKelilingPersegi();">Hitung</button>
+                                <button onclick="reset();">Reset</button>
+                            </div>
+                            <div class="result">
+                                <p id="rumusKelilingPersegi"></p>
+                                <p id="hitungKelilingPersegi"></p>
+                                <p id="resultKelilingPersegi"></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Software Engineering &#169; 2024, RevoU-Mini Project Website Kalkulator Matematik</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
